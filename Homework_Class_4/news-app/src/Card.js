@@ -6,11 +6,11 @@ const Card = (props) => {
 
   return (
     <>
-      {items.map((item) => {
+      {items.map((item) => (
         <div className="card col-4" key={item.source.id}>
-          <CardBody item={item} />;
-        </div>;
-      })}
+          <CardBody item={item} />
+        </div>
+      ))}
     </>
   );
 };
